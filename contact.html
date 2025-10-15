@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="img/logo.png" alt="Logo du portfolio" class="logo" />
+        <h1>Contact</h1>
+    </header>
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="cv.html">CV</a>
+        <a href="stages.html">Stages</a>
+        <a href="competences.html">Compétences</a>
+        <a href="veille.html">Veille</a>
+        <a href="ateliers.html">Ateliers Professionnels</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <main>
+        <h2>Contactez-moi</h2>
+        <form action="https://formspree.io/f/your-form-id" method="POST" style="max-width:500px;margin:2rem auto;text-align:left;">
+            <label for="name">Nom :</label><br>
+            <input type="text" id="name" name="name" required style="width:100%;padding:8px;margin-bottom:1em;border-radius:6px;border:1px solid #ccc;">
+
+            <label for="email">Email :</label><br>
+            <input type="email" id="email" name="email" required style="width:100%;padding:8px;margin-bottom:1em;border-radius:6px;border:1px solid #ccc;">
+
+            <label for="message">Message :</label><br>
+            <textarea id="message" name="message" rows="6" required style="width:100%;padding:8px;margin-bottom:1em;border-radius:6px;border:1px solid #ccc;"></textarea>
+
+            <button type="submit" style="background:#FF0000;color:#fff;padding:10px 24px;border:none;border-radius:6px;font-weight:bold;cursor:pointer;">Envoyer</button>
+        </form>
+        <p style="text-align:center;font-size:0.95em;color:#555;">Votre message sera envoyé sur une boîte mail dédiée via Formspree.<br>Remplacez <code>your-form-id</code> par l'identifiant de votre formulaire Formspree.</p>
+    </main>
+</body>
+</html>

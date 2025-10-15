@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ateliers Professionnels</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="img/logo.png" alt="Logo du portfolio" class="logo" />
+        <h1>Ateliers Professionnels</h1>
+    </header>
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="cv.html">CV</a>
+        <a href="stages.html">Stages</a>
+        <a href="competences.html">Compétences</a>
+        <a href="veille.html">Veille</a>
+        <a href="ateliers.html">Ateliers Professionnels</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <main>
+        <h2>Projets et Ateliers de Mise en Situation Professionnelle</h2>
+
+        <section class="projet-card">
+            <h3>Projet ALPY : Infrastructure Réseau Sécurisée avec DMZ </h3>
+            
+            <p><strong>Période :</strong> Année BTS SIO (SISR) | Technologies : pfSense (Routeur/Firewall), Linux (Samba, Nginx, MariaDB), Windows, Virtualisation.</p>
+
+            <hr>
+
+            <h4>Contexte et Mission</h4>
+            <p>Le groupement ALPY, gestionnaire de stations de ski dans les Pyrénées, souhaite recueillir des données de fréquentation et de satisfaction auprès de ses clients via un site Web. La mission était de concevoir et de déployer une infrastructure réseau sécurisée pour héberger ce service tout en protégeant le réseau local interne.</p>
+
+            <h4>Architecture Mise en Place</h4>
+            <p>L'infrastructure a été conçue autour du concept de DMZ (DeMilitarized Zone) pour isoler les services accessibles depuis l'extérieur (Internet) du réseau interne (LAN). Ce projet impliquait la mise en œuvre de plusieurs machines virtuelles :</p>
+            <ul>
+                <li>Routeur/Firewall (pfSense) : Mis en place pour filtrer le trafic, gérer le NAT et définir les règles de sécurité entre le WAN, la DMZ et le LAN.</li>
+                <li>Serveur Web (DMZ) : Serveur Linux (nginx) hébergeant le CMS Wordpress pour le site d'enquête, placé en DMZ pour limiter les risques.</li>
+                <li>Contrôleur de Domaine (LAN) : Serveur Linux (Samba) gérant le domaine et les utilisateurs du réseau interne.</li>
+                <li>Serveur de Bases de Données (LAN) : Serveur Linux (MariaDB) hébergeant les données, accessible uniquement par le Serveur Web de la DMZ (trafic filtré).</li>
+                <li>Poste d'Administration (LAN) : Poste Windows 11 pour l'administration et l'accès au réseau interne.</li>
+            </ul>
+
+            <h4>Compétences et Livrables Clés</h4>
+            <div class="competences-cles">
+                <ul>
+                    <li>Conception d'une architecture réseau multiniveaux (DMZ).</li>
+                    <li>Configuration avancée de Routeur et Pare-feu (pfSense).</li>
+                    <li>Mise en œuvre des services essentiels : DHCP (pour les postes en accès libre) et DNS.</li>
+                    <li>Maîtrise de la virtualisation pour déployer l'environnement complet.</li>
+                    <li>Rédaction de la Documentation Technique et des Plans de Tests.</li>
+                </ul>
+            </div>
+            
+        </section>
+
+    </main>
+</body>
+</html>
